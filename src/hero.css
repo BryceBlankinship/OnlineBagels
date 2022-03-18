@@ -1,0 +1,40 @@
+.hero-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 50px;
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('https://oandopizza.oohosp.com/wp-content/uploads/sites/8/2021/07/hero-image.jpg');
+    background-size: cover;
+}
+
+.hero-dropdown-btn {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-dropdown {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    z-index: 1;
+}
+
+.hero-dropdown a {
+    padding: 12px 16px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+.show {
+    display: block;
+}
+
+.hero-subtext {
+    overflow: hidden;
+}

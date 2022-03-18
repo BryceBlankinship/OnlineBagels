@@ -1,0 +1,8 @@
+.btn-small {
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
