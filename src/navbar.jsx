@@ -1,26 +1,28 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-export default class Navbar extends Component {
-    state = {
-        option: 0,
-    };
+export default function Navbar(){
+    const [option, setOption] = useState(0);
+    const navigate = useNavigate();
 
-    render(){
         return(
             <div class="topnav">
-            <a className={this.state.option === 0 ? 'active' : ''} onClick={() => {
-                this.setState({option: 0});
+            <a className={option === 0 ? 'active' : ''} onClick={() => {
+                setOption(0);
+                navigate('/');
             }}>Home</a>
-            <a className={this.state.option === 1 ? 'active' : ''} onClick={() => {
-                this.setState({option: 1});
+            <a className={option === 1 ? 'active' : ''} onClick={() => {
+                setOption(1);
+                navigate('/services');
             }}>Services</a>
-            <a className={this.state.option === 2 ? 'active' : ''} onClick={() => {
-                this.setState({option: 2});
-            }}>Contact</a>
-            <a className={this.state.option === 3 ? 'active' : ''} onClick={() => {
-                this.setState({option: 3});
+            <a className={option === 2 ? 'active' : ''} onClick={() => {
+                setOption(2);
+                navigate('/reviews');
+            }}>Reviews</a>
+            <a className={option === 3 ? 'active' : ''} onClick={() => {
+                setOption(3);
+                navigate('/auth');
             }}>Login</a>
             </div>
         );
-    }
 }

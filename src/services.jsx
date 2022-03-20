@@ -27,7 +27,7 @@ export default class Services extends Component {
                 <ServiceCard title="Accept Online Orders" desc="
                     Effortlessly accept online orders. Configure your menu for free here.
                 " btnTitle="Create Menu"/>
-                <ServiceCard title="Zero Transaction Fees" desc="desc2" btnTitle="Show Savings"/>
+                <ServiceCard title="Zero Transaction Fees" desc="Yea there's not much on this right now..." btnTitle="Show Savings"/>
                 <ServiceCard title={["Integrate with", <br></br>, "Third Party Delivery Services"]} desc="Our ordering system works directly with the DoorDash, Uber Eats, & Slice systems so you can easily keep all transactions in one view." btnTitle="Start Integration"/>
             </div>
         );
