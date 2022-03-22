@@ -6,7 +6,7 @@ export default function Navbar(){
     const navigate = useNavigate();
 
         return(
-            <div class="topnav">
+            <div className="topnav">
             <a className={option === 0 ? 'active' : ''} onClick={() => {
                 setOption(0);
                 navigate('/');
